@@ -3,10 +3,15 @@ import React from 'react';
 import './Editor.css';
 
 export default function Editor({ setTitle }) {
+  const handleTitle = (e) => {
+    setTitle;
+    e.target.value;
+  };
+
   return (
     <div className="editor">
       <div className="form-control">
-        <input name="title" type="text" />
+        <input name="title" type="text" onChange={handleTitle} />
         <label htmlFor="title">Title</label>
       </div>
       <div className="form-control">
