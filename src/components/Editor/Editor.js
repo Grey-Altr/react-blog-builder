@@ -4,12 +4,10 @@ import './Editor.css';
 
 export default function Editor({ setTitle, setSubtitle }) {
   const handleTitle = (e) => {
-    setTitle;
-    e.target.value;
+    setTitle(e.target.value);
   };
   const handleSubtitle = (e) => {
-    setSubtitle;
-    e.target.value;
+    setSubtitle(e.target.value);
   };
 
   return (
